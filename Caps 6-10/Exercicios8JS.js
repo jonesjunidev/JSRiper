@@ -5,8 +5,12 @@ document.getElementById(h1).textContent = "Pera";
 
 // 2. Mude a cor de fundo de um parágrafo ao carregar a página.
 
-let paragrafo = document.querySelector("par")
+    let paragrafo = document.querySelector("p");
 
-paragrafo.style.backgroundcolor = "red"
+    paragrafo.style.backgroundColor = "red";
 
 // 3. Adicione uma classe CSS a um botão existente.
+
+    let butao = document.querySelector("button")
+
+    butao.classList.add("estilo");
