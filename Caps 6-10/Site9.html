@@ -9,25 +9,53 @@
 
     <input id="inputin"></input>
 
-<script>
+    <h1></h1>
 
-    let paragrafo = document.querySelector("p");
+    <img src="https://conteudo.imguol.com.br/c/bol/fotos/2013/09/27/jan1982---durante-um-show-em-iowa-nos-estados-unidos-ozzy-osbourne-mordeu-a-cabeca-de-um-morcego-que-estava-vivo-o-cantor-disse-que-o-animal-era-de-plastico-e-o-mordeu-porque-achou-que-isso-iria-1380285124457_450x450.jpg"> 
+
+<script>
     
+    let paragrafo = document.querySelector("p");
+
+    let aga = document.querySelector("h1");
+    
+    let magem = document.querySelector("img");
+
     document.querySelector("button").addEventListener("click", function() {
         
-        paragrafo.Text = "Quadrado";
+        paragrafo.innerText = "Quadrado";
+        
     }); 
+
+    document.querySelector("input").addEventListener("input", function(t){
+
+        aga.innerText = t.target.value;
+
+    });
+
+    
+    document.querySelector("img").addEventListener("mouseover", function(){
+
+        magem.classList.add("imagem");
+
+    });
+
+
+
+
 
 </script>
 
 </body>
-
 <style>
-    .estilo{
-        font-family: 'Times New Roman', Times, serif;
-        color: purple;
+
+    .imagem{
+        border-color: brown;
+        border-width: 15px;
+        border-style: dotted;
     }
 
 </style>
+
 
 </html>
